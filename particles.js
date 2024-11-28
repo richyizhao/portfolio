@@ -4,14 +4,14 @@ const options = {
   },
   background: {
     color: {
-      value: "#1E2F97",
+      value: "#111827",
     },
   },
   fpsLimit: 120,
   interactivity: {
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: "repulse",
       },
       onHover: {
@@ -35,9 +35,9 @@ const options = {
     },
     links: {
       color: "#FFFFFF",
-      distance: 150,
+      distance: 170,
       enable: true,
-      opacity: 0.3,
+      opacity: 0.2,
       width: 1,
     },
     move: {
@@ -47,14 +47,14 @@ const options = {
         default: "bounce",
       },
       random: true,
-      speed: 3,
+      speed: 3.5,
       straight: false,
     },
     number: {
       density: {
         enable: true,
       },
-      value: 150,
+      value: 170,
     },
     opacity: {
       value: 1.0,
@@ -63,7 +63,7 @@ const options = {
       type: "circle",
     },
     size: {
-      value: { min: 1, max: 3 },
+      value: { min: 1, max: 2 },
     },
   },
   detectRetina: true,
