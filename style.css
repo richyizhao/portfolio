@@ -84,7 +84,7 @@ input[type="radio"] {
 #tab4:checked ~ .glider {
   transform: translate(450px);
 }
-/* ---------- Main Section ---------- */
+/* ---------- Main Layout ---------- */
 main {
   display: flex;
   flex-direction: column;
