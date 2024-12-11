@@ -2,52 +2,34 @@
 header {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 0.8;
   padding: 5.8rem 0;
   top: 0;
   max-height: 100vh;
   position: sticky;
 }
-.header-info > h1 {
+.header__info > h1 {
   color: white;
   font-size: 3rem;
 }
-.header-info > h2 {
+.header__info > h2 {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 0.5rem;
 }
-.header-info > p {
+.header__info > p {
   margin-top: 1rem;
   line-height: 1.5rem;
 }
 .navbar {
   margin-top: 2rem;
 }
-.navbar-menu {
+.navbar__menu {
   position: relative;
   list-style: none;
 }
-
-/* Icon Glider: Consider adding in the future
-.navbar-item::before {
-  background: #406ff3;
-  content: '';
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 1rem;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  position: absolute;
-  z-index: -1;
-  transition: 0.25s ease all;
-}
-*/
-
-/* nav icons */
-.navbar-link {
+.navbar__link {
   color: #94a3b8;
   display: flex;
   justify-content: center;
@@ -56,16 +38,13 @@ header {
   width: 3.5rem;
   position: relative;
 }
-.navbar-link:hover {
+.navbar__link:hover {
   color: white;
 }
-
-ul li:nth-child(4) {
-  margin-top: auto; /* Push this <li> to the bottom of the <ul> */
+nav:nth-child(3) {
+  margin: auto 0 2rem 0;
 }
-
-/* nav words */
-.navbar-link span {
+.navbar__link span {
   font-size: 1rem;
   margin-left: 2rem;
   border-radius: 1rem;
@@ -76,58 +55,135 @@ ul li:nth-child(4) {
   transform: translateX(-3rem);
   transition: 0.25s ease all;
 }
-.navbar-link:hover span {
+.navbar__link:hover span {
   opacity: 1;
   transform: translateX(0);
+}
+header > p {
+  font-size: 1.2rem;
 }
 /* ----- Main Section ----- */
 main {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  padding: 5.8rem 0;
+  flex: 0.80;
 }
 /* ----- About Section ----- */
+#about {
+  padding-top: 5.8rem;
+}
 #about p {
   margin-bottom: 1rem;
   line-height: 1.5rem;
 }
-#about p:nth-child(3) {
-  margin-bottom: 8rem;
+#about p:nth-child(4) {
+  margin-bottom: 0;
 }
 /* ----- Project Section ----- */
 #projects {
-  margin-bottom: 30rem;
-}
-.project-card-layout {
   display: flex;
+  flex-direction: column;
+  padding-top: 5.8rem;
+  gap: 2rem;
 }
-.project-links-container {
+.project__card {
+  background-color: white;
+  box-shadow: inset 0 0 0 0.3rem #94a3b8;
+  border-radius: 1rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  perspective: 80rem;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
+.project__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.project__card > svg {
+  width: 3rem;
+  position: absolute;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.project__card:hover > svg {
+  scale: 0;
+}
+.card__content {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  top: 0;
+  left: 0;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.project__card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card__title {
+  color: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.link__container {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.link__container a {
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.3rem;
+}
+.technologies__container {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.card__description {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+.card__content > p {
+  display: inline;
+}
 /* ----- Skills Section ----- */
 #skills {
-  margin-bottom: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 5.8rem;
+}
+.skills__card {
+  color: #0f172a;
+  background-color: white;
+  box-shadow: inset 0 0 0 0.3rem #94a3b8;
+  border-radius: 1rem;
+  padding: 1rem 1rem 0 1rem;
+  line-height: 1.5rem;
+}
+/* ----- Contact Section ----- */
+#contact {
+  padding: 5.8rem 0;
 }
 
 
 
-
+/* ----- Testing Section ----- */
 img {
   width: 3rem;
-}
-
-
-
-@keyframes gooeyEffect {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(0.5, 1.5);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+  object-fit: contain;
 }
