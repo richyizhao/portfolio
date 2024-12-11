@@ -3,20 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
-body {
-  background-color: #0f172a;
-  color: #94a3b8;
-}
-.layout-container {
-  display: flex;
-  gap: 1rem;
-  max-width: 60vw;
-  min-height: 100vh;
-  margin: auto;
-} 
 :root {
   font-family: "Inter", "sans-serif";
   font-feature-settings: "liga" 1, "calt" 1;
@@ -26,3 +12,17 @@ body {
     font-family: "InterVariable", "sans-serif"; 
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #0f172a;
+  color: #94a3b8;
+}
+.layout__container {
+  display: flex;
+  gap: 1rem;
+  max-width: 60vw;
+  min-height: 100vh;
+  margin: auto;
+} 
