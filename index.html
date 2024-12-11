@@ -11,9 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
-  <div class="layout-container">
+  <div class="layout__container">
     <header>
-      <div class="header-info">
+      <div class="header__info">
         <h1>Richard Zhao</h1>
         <h2>Full Stack Developer</h2>
         <p>
@@ -22,123 +22,249 @@
         </p>
       </div>
       <nav class="navbar">
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">
               <i data-feather="user"></i>
               <span>About</span>
             </a>
           </li>
-          <li class="navbar-item">
-            <a href="#projects" class="navbar-link">
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__link">
               <i data-feather="folder"></i>
               <span>Projects</span>
             </a>        
           </li>
-          <li class="navbar-item">
-            <a href="#skills" class="navbar-link">
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__link">
               <i data-feather="tool"></i>
               <span>Skills</span>
             </a>        
           </li>
-          <li class="navbar-item">
-            <a href="#contact" class="navbar-link">
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">
               <i data-feather="message-circle"></i>
               <span>Contact</span>
             </a>        
           </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="https://github.com/richyizhao" target="_blank">
+        </ul>
+      </nav>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="https://github.com/richyizhao" target="_blank">
               <i data-feather="github"></i>
               <span>Github</span>
             </a>        
           </li>
-          <li class="navbar-item">
-            <a class="navbar-link" href="https://www.linkedin.com/in/rzha/" target="_blank">
+          <li class="navbar__item">
+            <a class="navbar__link" href="https://www.linkedin.com/in/rzha/" target="_blank">
               <i data-feather="linkedin"></i>
               <span>Linkedin</span>
             </a>        
           </li>
         </ul>
       </nav>
-      <p>📍Auckland, New Zealand</p>
+      <p class="location">📍Auckland, New Zealand</p>
     </header>
 
     <main>
       <section id="about">
         <p>
-          Inspiration: Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Hic pariatur dolorem vitae optio. 
-          Cum mollitia delectus quis qui fuga magnam optio 
-          officiis placeat nam minus veniam, aliquam, est 
-          praesentium maxime?
+          This journey of mine started since I was in high school. Where I took,  
+          Design and Visual Communication, learned Graphic communication & 3D 
+          models. Programming, learned web development HTML/CSS & JavaScript.
+          Robotics, learned Embedded C++ programming & CAD software.
         </p>
         <p>
-          Role / Experience: Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Hic pariatur dolorem vitae optio. 
-          Cum mollitia delectus quis qui fuga magnam optio 
-          officiis placeat nam minus veniam, aliquam, est 
-          praesentium maxime?
+          I immediately became enamoured with the interactive process of design 
+          and technology. The fulfillment from seeing your work unfold itself, every 
+          step is simply unparalleled. Which is why I went to University of Auckland
+          for Computer Science. To pursue deeper knowledge of technology itself.
         </p>
         <p>
-          Goal / Interest: Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit. Hic pariatur dolorem vitae optio. 
-          Cum mollitia delectus quis qui fuga magnam optio 
-          officiis placeat nam minus veniam, aliquam, est 
-          praesentium maxime?
+          Currently I use Figma & React.js for Frontend. Node.js, Express.js & 
+          MongoDB for Backend. I am learning .NET core, PostgreSQL, MicrosoftSQL. 
+          To complete my Full Stack. Bash, Docker, Selenium, Jenkins for DevOps. 
+          Pytorch for AI.
+        </p>
+        <p>
+          My end goal is to use my Full Stack Developer experience for DevOps.
+          Where I leverage cloud computation, AWS, Azure for thorough testing.
         </p>
       </section>
 
       <section id="projects">
-        <div class="project-card-layout">
-          <img src="./Assets/landscape-placeholder.svg" alt="project image">
-          <div class="project-info">
-            <h2>Project name</h2>
-            <p>
-              - Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              - Hic pariatur dolorem vitae optio. <br>
-              - Cum mollitia delectus quis qui fuga magnam optio <br>
-              - officiis placeat nam minus veniam, aliquam, est <br>
-              - praesentium maxime? <br>
+        <div class="project__card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+          <div class="card__content">
+            <div class="card__title">
+              <h3>Social Media Website</h3>
+              <div class="link__container">
+                <a href="https://github.com/richyizhao" target="_blank">
+                  <span>Code</span>
+                  <i data-feather="code"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <span>Demo</span>
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="technologies__container">
+              <p>Made with:</p>
+              <img src="./Assets/React.svg" alt="React.js">
+              <img src="./Assets/Node.svg" alt="Node.js">
+              <img src="./Assets/Express.svg" alt="Express.js">
+              <img src="./Assets/Mongodb.svg" alt="Mongodb">
+            </div>
+            <p class="card__description">
+              - MVC architecture design to separate concerns in development. <br>
+              - CRUD Application. Create, delete, & edit any post the user has made. <br>
+              - Implemented content management for interactive user experience. <br>       
             </p>
-            <div class="technologies-used-container">
-              <img src="./assets/landscape-placeholder.svg" alt="project image">
-              <img src="./assets/landscape-placeholder.svg" alt="project image">
-              <img src="./assets/landscape-placeholder.svg" alt="project image">
+          </div>
+        </div>
+        <div class="project__card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+          <div class="card__content">
+            <div class="card__title">
+              <h3>Social Media Website</h3>
+              <div class="link__container">
+                <a href="https://github.com/richyizhao" target="_blank">
+                  <span>Code</span>
+                  <i data-feather="code"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <span>Demo</span>
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
             </div>
-            <div class="project-links-container">
-              <a href="https://github.com/richyizhao">View Code</a>
-              <a href="">Live Demo</a>
+            <div class="technologies__container">
+              <p>Made with:</p>
+              <img src="./Assets/React.svg" alt="React.js">
+              <img src="./Assets/Node.svg" alt="Node.js">
+              <img src="./Assets/Express.svg" alt="Express.js">
+              <img src="./Assets/Mongodb.svg" alt="Mongodb">
             </div>
+            <p class="card__description">
+              - MVC architecture design to separate concerns in development. <br>
+              - CRUD Application. Create, delete, & edit any post the user has made. <br>
+              - Implemented content management for interactive user experience. <br>       
+            </p>
+          </div>
+        </div>
+        <div class="project__card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+          <div class="card__content">
+            <div class="card__title">
+              <h3>Social Media Website</h3>
+              <div class="link__container">
+                <a href="https://github.com/richyizhao" target="_blank">
+                  <span>Code</span>
+                  <i data-feather="code"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <span>Demo</span>
+                  <i data-feather="external-link"></i>
+                </a>
+              </div>
+            </div>
+            <div class="technologies__container">
+              <p>Made with:</p>
+              <img src="./Assets/React.svg" alt="React.js">
+              <img src="./Assets/Node.svg" alt="Node.js">
+              <img src="./Assets/Express.svg" alt="Express.js">
+              <img src="./Assets/Mongodb.svg" alt="Mongodb">
+            </div>
+            <p class="card__description">
+              - MVC architecture design to separate concerns in development. <br>
+              - CRUD Application. Create, delete, & edit any post the user has made. <br>
+              - Implemented content management for interactive user experience. <br>       
+            </p>
           </div>
         </div>
       </section>
 
       <section id="skills">
-        <div class="skills-card-layout">
-          <h3>Frontend</h3>
-          <p></p>
-          <div class="technologies-container">
-
+        <div class="skills__card">
+          <h3>Frontend & Design</h3>
+          <p>
+            I have crafted responsive designs for websites to enhance user 
+            interactivity and improve the overall user experience.
+          </p>
+          <div class="technologies__container">
+            <img src="./Assets/Figma.svg" alt="Figma">
+            <img src="./Assets/HTML.svg" alt="HTML">
+            <img src="./Assets/CSS.svg" alt="CSS">
+            <img src="./Assets/Bootstrap.svg" alt="Bootstrap">
+            <img src="./Assets/JavaScript.svg" alt="JavaScript">
+            <img src="./Assets/TypeScript.svg" alt="TypeScript">
+            <img src="./Assets/Jquery.svg" alt="Jquery.js">
+            <img src="./Assets/React.svg" alt="React.js">
           </div>
         </div>
-        <div class="skills-card-layout">
-          <h3>Backend</h3>
-          <p></p>
-          <div class="technologies-container">
-
+        <div class="skills__card">
+          <h3>Backend & Database</h3>
+          <p>
+            I have utilized secure user authentication and authorization systems 
+            and constructed numerous APIs for scalable web applications.
+          </p>
+          <div class="technologies__container">
+            <img src="./Assets/Node.svg" alt="">
+            <img src="./Assets/Express.svg" alt="">
+            <img src="./Assets/NET.svg" alt="">
+            <img src="./Assets/Mongodb.svg" alt="">
+            <img src="./Assets/PostgreSQL.svg" alt="">
+            <img src="./Assets/MicrosoftSQL.svg" alt="">
           </div>
         </div>
-        <div class="skills-card-layout">
-          <h3>DevOps</h3>
-          <p></p>
-          <div class="technologies-container">
-
+        <div class="skills__card">
+          <h3>DevOps & Cloud</h3>
+          <p>
+            I have implemented end-to-end (E2E) testing automation and utilized 
+            cloud solutions to streamline the website development process.
+          </p>
+          <div class="technologies__container">
+            <img src="./Assets/Linux.svg" alt="Linux">
+            <img src="./Assets/Bash.svg" alt="Bash">
+            <img src="./Assets/Selenium.svg" alt="Selenium">
+            <img src="./Assets/Jenkins.svg" alt="Jenkins">
+            <img src="./Assets/Docker.svg" alt="Docker">
+            <img src="./Assets/Kubernetes.svg" alt="Kubernetes">
+            <img src="./Assets/Terraform.svg" alt="Terraform">
+            <img src="./Assets/Azure.svg" alt="Azure">
+            <img src="./Assets/AWS.svg" alt="AWS">
           </div>
         </div>
+        <div class="skills__card">
+          <h3>Miscellaneous</h3>
+          <p>
+            I have worked with various programming languages and created AI models 
+            for web applications to enhance functionality and user engagement.
+          </p>
+          <div class="technologies__container">
+            <img src="./Assets/Git.svg" alt="Git">
+            <img src="./Assets/Postman.svg" alt="Postman">
+            <img src="./Assets/GoogleColaboratory.svg" alt="Google Colaboratory">
+            <img src="./Assets/Pytorch.svg" alt="Pytorch">
+            <img src="./Assets/Python.svg" alt="Python">
+            <img src="./Assets/Java.svg" alt="Java">
+            <img src="./Assets/C.svg" alt="C">
+            <img src="./Assets/C++.svg" alt="C++">
+            <img src="./Assets/CSharp.svg" alt="C#">
+          </div>
+        </div>
+
       </section>
 
       <Section id="contact">
+        <div>
+          <p>
+            test
+          </p>
+        </div>
       </Section>
     </main>
   </div>
