@@ -1,3 +1,28 @@
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".navbar__item");
+
+const observerOptions = {
+  root: null, 
+  threshold: 0.7, 
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const id = entry.target.getAttribute("id");
+    if (entry.isIntersecting) {
+      navLinks.forEach((link) => link.classList.remove("active"));
+      const activeLink = document.querySelector(
+        `.navbar__link[href="#${id}"]`
+      ).parentElement;
+      activeLink.classList.add("active");
+    }
+  });
+}, observerOptions);
+
+sections.forEach((section) => observer.observe(section));
+
+
+
 feather.replace();
 
 const year = new Date().getFullYear();
@@ -73,4 +98,5 @@ const options = {
   },
   detectRetina: true,
 };
+
 tsParticles.load({id: "tsparticles", options});
