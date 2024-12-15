@@ -1,6 +1,6 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 :root {
@@ -19,6 +19,7 @@ body {
   background-color: #0f172a;
   color: #94a3b8;
 }
+/* ---------- Layout ---------- */
 .layout__container {
   display: flex;
   gap: 1rem;
@@ -26,3 +27,19 @@ body {
   min-height: 100vh;
   margin: auto;
 } 
+/* ---------- Right Header Section ---------- */
+header {
+  display: flex;
+  flex-direction: column;
+  flex: 0.4;
+  top: 0;
+  max-height: 100vh;
+  padding: 6rem 0;
+  position: sticky;
+}
+/* ---------- Left Main Section ---------- */
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 0.6;
+}
