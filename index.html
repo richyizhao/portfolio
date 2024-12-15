@@ -6,14 +6,19 @@
   <title>Richard Zhao</title>
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  <link rel="stylesheet" href="./CSS/root-styles.css">
+  <link rel="stylesheet" href="./CSS/app.css">
+  <link rel="stylesheet" href="./CSS/header-section.css">
+  <link rel="stylesheet" href="./CSS/about-section.css">
+  <link rel="stylesheet" href="./CSS/projects-section.css">
+  <link rel="stylesheet" href="./CSS/skills-section.css">
+  <link rel="stylesheet" href="./CSS/contact-section.css">
   <link rel="stylesheet" href="./CSS/section-styles.css">
   <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
   <div class="layout__container">
     <header>
-      <div class="header__info">
+      <div class="header__container">
         <h1>Richard Zhao</h1>
         <h2>Full Stack Developer</h2>
         <p>
@@ -21,44 +26,44 @@
           seamless user experience.
         </p>
       </div>
-      <nav class="navbar">
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#about" class="navbar__link">
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">
               <i data-feather="user"></i>
               <span>About</span>
             </a>
           </li>
-          <li class="navbar__item">
-            <a href="#projects" class="navbar__link">
+          <li>
+            <a href="#projects">
               <i data-feather="folder"></i>
               <span>Projects</span>
             </a>        
           </li>
-          <li class="navbar__item">
-            <a href="#skills" class="navbar__link">
+          <li>
+            <a href="#skills">
               <i data-feather="tool"></i>
               <span>Skills</span>
             </a>        
           </li>
-          <li class="navbar__item">
-            <a href="#contact" class="navbar__link">
+          <li>
+            <a href="#contact">
               <i data-feather="message-circle"></i>
               <span>Contact</span>
             </a>        
           </li>
         </ul>
       </nav>
-      <nav class="navbar">
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a class="navbar__link" href="https://github.com/richyizhao" target="_blank">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://github.com/richyizhao" target="_blank">
               <i data-feather="github"></i>
               <span>Github</span>
             </a>        
           </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="https://www.linkedin.com/in/rzha/" target="_blank">
+          <li>
+            <a href="https://www.linkedin.com/in/rzha/" target="_blank">
               <i data-feather="linkedin"></i>
               <span>Linkedin</span>
             </a>        
@@ -70,27 +75,23 @@
     <main>
       <section id="about">
         <p>
-          My journey began in high school, where I explored <span class="emphasis">Design and Visual 
-          Communication</span>, learning <span class="emphasis">graphic communication</span> and <span class="emphasis">3D modeling</span>. 
-          <span class="emphasis">Programming</span>, where I gained skills in <span class="emphasis">HTML/CSS</span> and <span class="emphasis">JavaScript</span>. And 
-          <span class="emphasis">Robotics</span>, focusing on <span class="emphasis">C++ embedded programming</span> and <span class="emphasis">CAD software</span>.
+          My journey began in high school, where I explored Design and Visual Communication, 
+          learned graphic communication and 3D modeling. In programming, I gained skills in web 
+          development. In Robotics, focused on embedded programming and CAD software.
         </p>
         <p>
           I was captivated by the process of bringing ideas to life through technology, 
-          which inspired me to pursue <span class="emphasis">Computer Science</span> at the <span class="emphasis">University of 
-          Auckland</span> to deepen my understanding and expertise.
+          which inspired me to pursue <span class="emphasis">Computer Science</span> at <span class="emphasis">University of Auckland</span> to help develop my 
+          understanding and explore IT.
         </p>
         <p>
-          Currently, I use <span class="emphasis">Figma</span> and <span class="emphasis">React.js</span> for front-end development and <span class="emphasis">Node.js, 
-          Express.js</span>, and <span class="emphasis">MongoDB</span> for the back end. I’m expanding my skills with 
-          <span class="emphasis">.NET Core, PostgreSQL</span>, and <span class="emphasis">Microsoft SQL</span> to strengthen my full-
-          stack capabilities.
+          At UOA, I developed skills in software development and AI. Where I was taught how to 
+          build complex web applications using functional programming. I also focused on database
+          design. Covered machine learning techniques, and addressed software security.         
         </p>
         <p>
-          I also work with <span class="emphasis">Bash, Docker, Selenium</span>, and <span class="emphasis">Jenkins</span> for DevOps, and I’m 
-          exploring <span class="emphasis">PyTorch</span> for AI. My end goal is to apply my <span class="emphasis">Full Stack</span> and <span class="emphasis">DevOps</span> 
-          experience with cloud platforms like <span class="emphasis">AWS</span> and <span class="emphasis">Azure</span> for efficient testing 
-          and deployment.
+          As I look to the future, I aim to explore cutting-edge technologies and their applications. 
+          I am particularly interested in fields such as AI and cloud infrastructure.
         </p>
       </section>
 
@@ -115,19 +116,19 @@
               <p>Made with:</p>
               <div class="tooltip">
                 <img src="./Assets/React.svg" alt="React.js">
-                <span class="tooltip-text">React.js</span>
+                <span class="tooltip__text">React.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Node.svg" alt="Node.js">
-                <span class="tooltip-text">Node.js</span>
+                <span class="tooltip__text">Node.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Express.svg" alt="Express.js">
-                <span class="tooltip-text">Express.js</span>
+                <span class="tooltip__text">Express.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Mongodb.svg" alt="Mongodb">
-                <span class="tooltip-text">Mongodb</span>
+                <span class="tooltip__text">Mongodb</span>
               </div>
             </div>
             <p class="card__description">
@@ -157,19 +158,19 @@
               <p>Made with:</p>
               <div class="tooltip">
                 <img src="./Assets/React.svg" alt="React.js">
-                <span class="tooltip-text">React.js</span>
+                <span class="tooltip__text">React.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Node.svg" alt="Node.js">
-                <span class="tooltip-text">Node.js</span>
+                <span class="tooltip__text">Node.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Express.svg" alt="Express.js">
-                <span class="tooltip-text">Express.js</span>
+                <span class="tooltip__text">Express.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Mongodb.svg" alt="Mongodb">
-                <span class="tooltip-text">Mongodb</span>
+                <span class="tooltip__text">Mongodb</span>
               </div>
             </div>
             <p class="card__description">
@@ -199,19 +200,19 @@
               <p>Made with:</p>
               <div class="tooltip">
                 <img src="./Assets/React.svg" alt="React.js">
-                <span class="tooltip-text">React.js</span>
+                <span class="tooltip__text">React.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Node.svg" alt="Node.js">
-                <span class="tooltip-text">Node.js</span>
+                <span class="tooltip__text">Node.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Express.svg" alt="Express.js">
-                <span class="tooltip-text">Express.js</span>
+                <span class="tooltip__text">Express.js</span>
               </div>
               <div class="tooltip">
                 <img src="./Assets/Mongodb.svg" alt="Mongodb">
-                <span class="tooltip-text">Mongodb</span>
+                <span class="tooltip__text">Mongodb</span>
               </div>
             </div>
             <p class="card__description">
@@ -233,39 +234,39 @@
           <div class="technologies__container">
             <div class="tooltip">
               <img src="./Assets/Figma.svg" alt="Figma">
-              <span class="tooltip-text">Figma</span>
+              <span class="tooltip__text">Figma</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/HTML.svg" alt="HTML">
-              <span class="tooltip-text">HTML</span>
+              <span class="tooltip__text">HTML</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/CSS.svg" alt="CSS">
-              <span class="tooltip-text">CSS</span>
+              <span class="tooltip__text">CSS</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Bootstrap.svg" alt="Bootstrap">
-              <span class="tooltip-text">Bootstrap</span>
+              <span class="tooltip__text">Bootstrap</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Scss.svg" alt="SCSS">
-              <span class="tooltip-text">SCSS</span>
+              <span class="tooltip__text">SCSS</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/JavaScript.svg" alt="JavaScript">
-              <span class="tooltip-text">JavaScript</span>
+              <span class="tooltip__text">JavaScript</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/TypeScript.svg" alt="TypeScript">
-              <span class="tooltip-text">TypeScript</span>
+              <span class="tooltip__text">TypeScript</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Jquery.svg" alt="Jquery.js">
-              <span class="tooltip-text">Jquery.js</span>
+              <span class="tooltip__text">Jquery.js</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/React.svg" alt="React.js">
-              <span class="tooltip-text">React.js</span>
+              <span class="tooltip__text">React.js</span>
             </div>
           </div>          
         </div>
@@ -278,35 +279,35 @@
           <div class="technologies__container">
             <div class="tooltip">
               <img src="./Assets/Node.svg" alt="Node.js">
-              <span class="tooltip-text">Node.js</span>
+              <span class="tooltip__text">Node.js</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Express.svg" alt="Express.js">
-              <span class="tooltip-text">Express.js</span>
+              <span class="tooltip__text">Express.js</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/NET.svg" alt=".NET">
-              <span class="tooltip-text">.NET</span>
+              <span class="tooltip__text">.NET</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/PHP.svg" alt="Php">
-              <span class="tooltip-text">Php</span>
+              <span class="tooltip__text">Php</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Mongodb.svg" alt="MongoDB">
-              <span class="tooltip-text">MongoDB</span>
+              <span class="tooltip__text">MongoDB</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Mysql.svg" alt="Mysql">
-              <span class="tooltip-text">Mysql</span>
+              <span class="tooltip__text">Mysql</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/PostgreSQL.svg" alt="PostgreSQL">
-              <span class="tooltip-text">PostgreSQL</span>
+              <span class="tooltip__text">PostgreSQL</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/MicrosoftSQL.svg" alt="Microsoft SQL">
-              <span class="tooltip-text">Microsoft SQL</span>
+              <span class="tooltip__text">Microsoft SQL</span>
             </div>
           </div>
         </div>
@@ -319,43 +320,43 @@
           <div class="technologies__container">
             <div class="tooltip">
               <img src="./Assets/Linux.svg" alt="Linux">
-              <span class="tooltip-text">Linux</span>
+              <span class="tooltip__text">Linux</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Bash.svg" alt="Bash">
-              <span class="tooltip-text">Bash</span>
+              <span class="tooltip__text">Bash</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Selenium.svg" alt="Selenium">
-              <span class="tooltip-text">Selenium</span>
+              <span class="tooltip__text">Selenium</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Jenkins.svg" alt="Jenkins">
-              <span class="tooltip-text">Jenkins</span>
+              <span class="tooltip__text">Jenkins</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Docker.svg" alt="Docker">
-              <span class="tooltip-text">Docker</span>
+              <span class="tooltip__text">Docker</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Kubernetes.svg" alt="Kubernetes">
-              <span class="tooltip-text">Kubernetes</span>
+              <span class="tooltip__text">Kubernetes</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Ansible.svg" alt="Ansible">
-              <span class="tooltip-text">Ansible</span>
+              <span class="tooltip__text">Ansible</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Terraform.svg" alt="Terraform">
-              <span class="tooltip-text">Terraform</span>
+              <span class="tooltip__text">Terraform</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Azure.svg" alt="Azure">
-              <span class="tooltip-text">Azure</span>
+              <span class="tooltip__text">Azure</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/AWS.svg" alt="AWS">
-              <span class="tooltip-text">AWS</span>
+              <span class="tooltip__text">AWS</span>
             </div>
           </div>
         </div>
@@ -368,43 +369,43 @@
           <div class="technologies__container">
             <div class="tooltip">
               <img src="./Assets/VScode.svg" alt="VS Code">
-              <span class="tooltip-text">VS Code</span>
+              <span class="tooltip__text">VS Code</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Git.svg" alt="Git">
-              <span class="tooltip-text">Git</span>
+              <span class="tooltip__text">Git</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Postman.svg" alt="Postman">
-              <span class="tooltip-text">Postman</span>
+              <span class="tooltip__text">Postman</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/GoogleColaboratory.svg" alt="Google Colaboratory">
-              <span class="tooltip-text">Google Colaboratory</span>
+              <span class="tooltip__text">Google Colaboratory</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Pytorch.svg" alt="PyTorch">
-              <span class="tooltip-text">PyTorch</span>
+              <span class="tooltip__text">PyTorch</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Python.svg" alt="Python">
-              <span class="tooltip-text">Python</span>
+              <span class="tooltip__text">Python</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/Java.svg" alt="Java">
-              <span class="tooltip-text">Java</span>
+              <span class="tooltip__text">Java</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/C.svg" alt="C">
-              <span class="tooltip-text">C</span>
+              <span class="tooltip__text">C</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/C++.svg" alt="C++">
-              <span class="tooltip-text">C++</span>
+              <span class="tooltip__text">C++</span>
             </div>
             <div class="tooltip">
               <img src="./Assets/CSharp.svg" alt="C#">
-              <span class="tooltip-text">C#</span>
+              <span class="tooltip__text">C#</span>
             </div>
           </div>
         </div>
@@ -414,7 +415,7 @@
         <div class="contact__card">
           <div class="card__title">
             <h3>Contact Me</h3>
-            <div class="link__container">
+            <div>
               <p class="location">Auckland, NZ</p>
               <i data-feather="map-pin"></i>
             </div>
@@ -423,8 +424,11 @@
           <form action="">
             <input type="text" placeholder="Email">
             <textarea name="" id="" placeholder="Your message"></textarea>
-            <button> Send <i data-feather="send"></i></button>
           </form>
+          <button> 
+            <span>Send</span> 
+            <i data-feather="send"></i>
+          </button>
         </div>
 
         <footer>
