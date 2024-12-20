@@ -33,12 +33,12 @@ body {
   display: flex;
   gap: 1rem;
   background-color: #0f172a;
-  max-width: 70vw;
+  max-width: 84rem;
   min-height: 100vh;
   margin: auto;
   position: relative;
 } 
-/* ---------- Right Header Section ---------- */
+/* ---------- Header Section ---------- */
 header {
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@ header {
   padding: 6rem 0 6rem 3rem;
   position: sticky;
 }
-/* ---------- Left Main Section ---------- */
+/* ---------- Main Section ---------- */
 main {
   display: flex;
   flex-direction: column;
@@ -327,4 +327,26 @@ button:hover {
 }
 button:active {
   transform: scale(1.00);
+}
+@media (max-width: 61.25rem) {
+  /* ---------- Layout Container ---------- */
+  .layout__container {
+    flex-direction: column;
+  }
+  /* ---------- Header Section ---------- */
+  header {
+    padding: 3rem 3rem 0 3rem;
+    position: static;
+  }
+  /* ---------- Main Section ---------- */
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+    padding: 0 3rem;
+  }
+  /* ----- Header Section ----- */
+  nav {
+    display: none; 
+  }
 }
