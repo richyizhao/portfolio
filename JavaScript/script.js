@@ -106,4 +106,4 @@ const options = {
   detectRetina: true,
 };
 
-tsParticles.load({id: "tsparticles", options});
+//tsParticles.load({id: "tsparticles", options});
