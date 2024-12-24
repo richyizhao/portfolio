@@ -101,7 +101,7 @@
               <p>
                 MVC architecture design to separate concerns in development. CRUD 
                 Application. Create, delete, & edit any post the user has made. 
-                Implemented content management for interactive user experience.       
+                Uses JWT web tokens for middleware authentication    
               </p>
               <div class="technologies__container">
                 <div class="technologies__tag" style="background-color: rgba(14, 165, 233, 0.3);">
@@ -111,6 +111,10 @@
                 <div class="technologies__tag" style="background-color: rgba(14, 165, 233, 0.3);">
                   <img src="./Assets/React.svg" alt="React.js">
                   <span class="technology__name" style="color: rgb(14, 165, 233);">React.js</span>
+                </div>
+                <div class="technologies__tag" style="background-color: rgba(99, 102, 241, 0.3);">
+                  <img src="./Assets/Next.svg" alt="Next.js">
+                  <span class="technology__name" style="color: rgb(99, 102, 241);">Next.js</span>
                 </div>
                 <div class="technologies__tag" style="background-color: rgba(16, 185, 129, 0.3);">
                   <img src="./Assets/Node.svg" alt="Node.js">
@@ -191,6 +195,10 @@
               <div class="technologies__tag" style="background-color: rgba(14, 165, 233, 0.3);">
                 <img src="./Assets/React.svg" alt="React.js">
                 <span class="technology__name" style="color: rgb(14, 165, 233);">React.js</span>
+              </div>
+              <div class="technologies__tag" style="background-color: rgba(99, 102, 241, 0.3);">
+                <img src="./Assets/Next.svg" alt="Next.js">
+                <span class="technology__name" style="color: rgb(99, 102, 241);">Next.js</span>
               </div>
             </div>          
           </div>
@@ -349,6 +357,7 @@
             <form name="Contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit="submit">
               <input type="email" name="bot-field" style="display: none;">
               <input type="text" name="bot-field" style="display: none;">
+              
               <input type="email" name="email" id="email" placeholder="Email" required>
               <textarea type="text" name="message" id="message" placeholder="Your message" required></textarea>
               <button type="submit"> 
