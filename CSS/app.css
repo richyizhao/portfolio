@@ -19,15 +19,6 @@ body {
   background-color: #09090b; 
   color: #a1a1aa; 
 }
-/* ---------- Background tsparticles ---------- */
-#tsparticles {
-  top: 0;
-  left: 0;
-  width: 14.75%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
 /* ---------- Layout Container ---------- */
 .layout__container {
   display: flex;
@@ -55,16 +46,19 @@ main {
   flex: 0.6;
   padding: 0 3rem 0 0;
 }
+.section__title {
+  display: none;
+}
 /* ----- Header Section ----- */
 .header__container {
   margin-bottom: 4rem;
 }
 .header__container > h1 {
-  color: white;
+  color: #ffffff;
   font-size: 3rem;
 }
 .header__container > h2 {
-  color: white;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: normal;
   margin-top: 0.5rem;
@@ -74,8 +68,9 @@ main {
   margin-top: 1rem;
 }
 nav {
-  padding: 0 0 0 1rem;
   border-left: 0.1rem solid rgb(45, 45, 45);
+  margin-bottom: 4rem;
+  padding: 0 0 0 1rem;
 }
 /* Top navbar */
 nav > ul {
@@ -92,7 +87,7 @@ nav > ul > li > a {
   position: relative;
 }
 nav > ul > li > a:hover {
-  color: white;
+  color: #ffffff;
 }
 nav > ul > li > a span {
   font-weight: bold;
@@ -100,7 +95,7 @@ nav > ul > li > a span {
   text-transform: uppercase;
   border-radius: 1rem;
   left: 100%;
-  padding-left: 2rem;
+  padding-left: 1rem;
   transform: translateX(-2rem);
   transition: 0.25s ease;
   position: absolute;
@@ -110,25 +105,25 @@ nav > ul > li > a:hover span {
 }
 /* Bottom navbar */
 nav:nth-child(3) {
-  margin-top: auto;
+  margin: auto 0 0 0;
 }
 nav:nth-child(3) > nav > ul > li span {
   transform: translateX(0);
 }
 li.active a span {
-  color: white;
+  color: #ffffff;
   transform: translateX(0);
 }
 li.active a svg {
-  color: white;
+  color: #ffffff;
 }
 /* ----- About Section ----- */
 #about {
   padding-top: 6.3rem;
 }
 .about__card {
-  padding: 0 0 0 1rem;
   border-left: 0.1rem solid rgb(45, 45, 45);
+  padding: 0 0 0 1rem;
 }
 .about__card p {
   margin-bottom: 1rem;
@@ -142,69 +137,69 @@ li.active a svg {
 }
 /* ----- Project Section ----- */
 #projects {
+  padding-top: 6.7rem;
+}
+.projects__card__containers {
   display: flex;
   flex-direction: column;
-  padding-top: 6.7rem;
   gap: 2rem;
 }
 .projects__card {
   display: flex;
   gap: 1rem;
-  
-  /* background-color: hsla(0, 0%, 100%, 0.1); */
-
   border-radius: 1rem;
   border: 0.1rem solid rgb(45, 45, 45);
   overflow: hidden;
   position: relative;
 }
-.projects__card > img {
-  flex: 1;
-  width: 10%;
-  object-fit: cover;
-}
 .projects__card__info {
   flex: 1;
   padding: 1rem 0 0 1rem;
 }
+.projects__card__info > h3 {
+  color: #ffffff;
+  font-weight: normal;
+}
 .projects__card__info > p {
   padding: 0.5rem 0 1rem 0;
 }
-.projects__card__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.projects__card__img {
+  flex: 1;
 }
-.projects__card__title > h3 {
-  color: white;
-  font-weight: normal;
+.projects__card__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.projects__card__title > div {
+.projects__card__img__links {
   display: flex;
   gap: 1rem;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  position: absolute;
 }
-.projects__card__title > div > a {
+.projects__card__img__links > a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   color: #a1a1aa;
   text-decoration: none;
 }
-.projects__card__title > div > a:hover {
-  color: white;
+.projects__card__img__links> a:hover {
+  color: #000000;
 }
 /* ----- Skills Section ----- */
 #skills {
+  padding-top: 6.7rem;
+}
+.skills__card__containers {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 6.7rem;
 }
 .skills__card {
-  color: white;
-  
-  /* background-color: hsla(0, 0%, 100%, 0.1); */
-
+  color: #ffffff;
   border-radius: 1rem;
   border: 0.1rem solid rgb(45, 45, 45);
   padding: 1rem 1rem 0 1rem;
@@ -214,7 +209,7 @@ li.active a svg {
   font-weight: normal;
 }
 .skills__card > p {
-  color: hsla(0, 0%, 100%, .7);
+  color: #a1a1aa;
   padding: 0.5rem 0 1rem 0;
 }
 /* Tech stack icons */
@@ -239,11 +234,8 @@ li.active a svg {
   border-radius: 0.5rem;
   padding: 0.3rem;
 }
-.technology__name {
-  color: white;
-}
 /* ----- Contact Section ----- */
-#contact {
+.contact__card__containers {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -254,10 +246,7 @@ li.active a svg {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  color: white;
-  
-  /* background-color: hsla(0, 0%, 100%, 0.1); */
-
+  color: #ffffff;
   border-radius: 1rem;
   border: 0.1rem solid rgb(45, 45, 45);
   padding: 1rem;
@@ -287,7 +276,7 @@ form {
 }
 input,
 textarea {
-  background-color: #e5e7eb;
+  background-color: #ffffff;
   font-family: inherit;
   font-size: 1rem;
   border: none;
@@ -300,16 +289,13 @@ textarea {
   height: 12rem;
   resize: none;
 }
-footer {
-  align-self: flex-end;
-}
 button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  background-color: #e5e7eb;
-  color: #000;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 1.2rem;
   font-weight: normal;
   border: none;
@@ -320,12 +306,14 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #a1a1aa;
-  color: #000;
-  transform: scale(1.02);
+  transform: scaleX(1.01);
 }
 button:active {
-  transform: scale(1.00);
+  transform: scaleX(1.00);
+}
+footer {
+  align-self: flex-end;
+  margin-top: 7rem;
 }
 @media (max-width: 61.25rem) {
   /* ---------- Layout Container ---------- */
@@ -337,6 +325,9 @@ button:active {
     padding: 3rem 3rem 0 3rem;
     position: static;
   }
+  .header__container {
+    margin-bottom: 0;
+  }
   /* ---------- Main Section ---------- */
   main {
     display: flex;
@@ -344,8 +335,51 @@ button:active {
     flex: 0.6;
     padding: 0 3rem;
   }
+  .section__title {
+    display: block;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
   /* ----- Header Section ----- */
   nav {
     display: none; 
+  }
+  /* ----- Projects Section ----- */
+  .projects__card {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .projects__card__img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .projects__card__img__links {
+    gap: auto;
+  }
+  /* ----- Contact Section ----- */
+  #contact > h2 {
+    padding-top: 6.5rem;
+  }
+  .contact__card__containers {
+    height: 85vh;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 30rem) {
+  /* ---------- Header Section ---------- */
+  header {
+    padding: 3rem 1rem 0 1rem;
+  }
+  /* ---------- Main Section ---------- */
+  main {
+    padding: 0 1rem;
+  }
+  /* ----- Contact Section ----- */
+  .contact__card__title > h3 > span,
+  .contact__card__title > div > p > span {
+    display: none;
   }
 }
